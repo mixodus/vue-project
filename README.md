@@ -2,7 +2,7 @@
 
 Just do `npm i` and then `npm run dev` for running the project.
 
-Note: There's a default header that I use to navigate between the finished task faster. Naviate to `Admin Panel` for admin panel's task and `Landing Page` for the landing page task.
+Note: There's a default header that I use to navigate between the finished task faster. Navigate to `Admin Panel` for admin panel's task and `Landing Page` for the landing page task.
 
 I've should use global variable for css (css's enviroment variables setup). I'm still learning Tailwind... but I'm getting better 🥂
 
