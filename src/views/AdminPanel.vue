@@ -33,7 +33,7 @@ import CategoryModalComponent from '../components/AdminPanel/CategoryModalCompon
             <section class="col-span-3 md:col-span-1">
                 <div class="p-6 bg-white border border-gray-200 rounded-lg shadow-lg">
                     <form action="">
-                        <h5 class="text-black text-lg mb-5">Product Organization</h5>
+                        <h5 class="text-black text-xl mb-5 font-semibold">Product Organization</h5>
                         <div class="mb-6">
                             <label for="categories">
                                 <h5 class="text-black">Product Category</h5>
@@ -68,16 +68,21 @@ import CategoryModalComponent from '../components/AdminPanel/CategoryModalCompon
                     </form>
                 </div>
             </section>
+
+            <section class="col-span-3 md:col-span-2 mt-12">
+                <InventoryComponent/>
+            </section>
         </div>
     </div>
 
-    <CategoryModalComponent :showModal="showModal"/>
+    <CategoryModalComponent :showModal="showModal" @refreshData="getCategories()"/>
 </template>
 
 <script>
     import { QuillEditor } from '@vueup/vue-quill'
     import '@vueup/vue-quill/dist/vue-quill.snow.css';
     import axios from 'axios'
+    import InventoryComponent from '../components/AdminPanel/InventoryComponent.vue';
 
 
     export default {
@@ -128,6 +133,9 @@ import CategoryModalComponent from '../components/AdminPanel/CategoryModalCompon
                 });
             },
 
+            logData(){
+                console.log('data');
+            },
             selectedCategory(ev){
                 console.log('Parent Component: '+ ev.name)
             },

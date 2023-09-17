@@ -13,11 +13,11 @@ onMounted(() => {
         <button id="states-button" data-dropdown-toggle="dropdown-states" class="w-full rounded-lg text-center text-black border border-black py-2 capitalize" type="button">
             {{ selected.name }}
         </button>  
-        <div id="dropdown-states" class="z-10 hidden bg-white divide-y divide-gray-100 shadow w-72 max-h-40 overflow-y-scroll">
+        <div id="dropdown-states" class="z-10 hidden bg-white divide-y divide-gray-100 shadow w-72 max-h-56 overflow-y-scroll">
             <ul class="text-black">
                 <li v-for="category of categories">
                     <button type="button" v-on:click="select(category)" class="w-full text-left text-black py-2 hover:bg-gray-100 capitalize">
-                        <p class="mx-2">{{category.name}}</p>
+                        <p class="mx-3">{{category.name}}</p>
                     </button>
                 </li>
                 <li>
