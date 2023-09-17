@@ -83,7 +83,11 @@
                   </div>
                   <div class="flex justify-end items-center p-6 pb-0 space-x-2 rounded-b">
                       <button data-modal-hide="addcategory_modal" type="button" class="mx-1 bg-transparent text-black py-2 px-4 border border-white-500 hover:border-transparent rounded cursor-pointer">Cancel</button>
-                      <button @click="submitForm()" class="mx-1 bg-[#008060] hover:bg-[#018c69] text-white py-2 px-4 rounded cursor-pointer">{{button_wording}}</button>
+                      <button @click="submitForm()" class="mx-1 bg-[#008060] hover:bg-[#018c69] text-white py-2 px-4 rounded cursor-pointer">
+                        <!-- <svg v-if="button_wording == 'Sending...'" class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
+                        </svg> -->
+                        {{button_wording}}
+                      </button>
                   </div>
               </div>
           </div>
