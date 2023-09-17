@@ -3,7 +3,7 @@
 Node version >= 14 is required to run the project.
 Personally I use node v16.20.1
 
-Clone this project via http then `npm i` on project root and `npm run dev` to run the project.
+Clone this project then `npm i` on the project's root folder and `npm run dev` to run the project.
 
 Note: There's a default header that I use to navigate between the finished task faster. Navigate to `Admin Panel` for admin panel's task and `Landing Page` for the landing page task.
 
