@@ -2,6 +2,13 @@
 import AdminPanelHeader from '../components/AdminPanel/AdminPanelHeader.vue'
 import DropdownOptionComponent from '../components/AdminPanel/DropdownOptionComponent.vue';
 import CategoryModalComponent from '../components/AdminPanel/CategoryModalComponent.vue'
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+    initFlowbite();
+})
 </script>
 
 <template>
@@ -20,7 +27,7 @@ import CategoryModalComponent from '../components/AdminPanel/CategoryModalCompon
 
                         </div>
 
-                        <div class="mb-6">
+                        <div class="mb-6 h-full">
                             <label for="description">
                                 <h5 class="text-black">Description</h5>
                             </label>
@@ -33,7 +40,20 @@ import CategoryModalComponent from '../components/AdminPanel/CategoryModalCompon
             <section class="col-span-3 md:col-span-1">
                 <div class="p-6 bg-white border border-gray-200 rounded-lg shadow-lg">
                     <form action="">
-                        <h5 class="text-black text-xl mb-5 font-semibold">Product Organization</h5>
+                        <h5 class="text-black text-xl mb-5 font-semibold">
+                            Product Organization
+                            <span>
+                                <button data-tooltip-target="tooltip-default" type="button" class="text-black bg-transparent focus:outline-none font-medium rounded-lg text-sm text-center">
+                                    <svg class="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9h2v5m-2 0h4M9.408 5.5h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                                    </svg>
+                                </button>
+                                <div id="tooltip-default" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    Lorem Ipsum Dolor Sit Amet
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
+                                </div>
+                            </span>
+                        </h5>
                         <div class="mb-6">
                             <label for="categories">
                                 <h5 class="text-black">Product Category</h5>
