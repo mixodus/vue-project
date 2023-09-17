@@ -74,7 +74,7 @@
                         <div class="flex items-center max-w-xl">
                             <div>
                                 <div class="bg-[#F8D171] p-5">
-                                    <img src="../assets/landingPage/store.svg" alt="" class="min-w-[2rem]">
+                                    <img src="../assets/landingPage/store.svg" alt="" class="min-w-[2rem] max-w-[2.25rem]">
                                 </div>
                             </div>
                             <div class="ml-3">
@@ -91,7 +91,7 @@
                         <div class="flex items-center max-w-xl">
                             <div>
                                 <div class="bg-[#F8D171] p-5">
-                                    <img src="../assets/landingPage/lamp.svg" alt="" class="min-w-[2rem]">
+                                    <img src="../assets/landingPage/lamp.svg" alt="" class="min-w-[2rem] max-w-[2.25rem]">
                                 </div>
                             </div>
                             <div class="ml-3">
@@ -108,7 +108,7 @@
                         <div class="flex items-center max-w-xl">
                             <div>
                                 <div class="bg-[#F8D171] p-5">
-                                    <img src="../assets/landingPage/fingerprint.svg" alt="" class="min-w-[2rem]">
+                                    <img src="../assets/landingPage/fingerprint.svg" alt="" class="min-w-[2rem] max-w-[2.25rem]">
                                 </div>
                             </div>
                             <div class="ml-3">
@@ -125,7 +125,7 @@
                         <div class="flex items-center max-w-xl">
                             <div>
                                 <div class="bg-[#F8D171] p-5">
-                                    <img src="../assets/landingPage/lock.svg" alt="" class="min-w-[2rem]">
+                                    <img src="../assets/landingPage/lock.svg" alt="" class="min-w-[2rem] max-w-[2.25rem]">
                                 </div>
                             </div>
                             <div class="ml-3">
