@@ -7,7 +7,7 @@ Clone this project then `npm i` on the project's root folder and `npm run dev` t
 
 Note: There's a default header that I use to navigate between the finished task faster. Navigate to `Admin Panel` for admin panel's task and `Landing Page` for the landing page task.
 
-I should have use global variable for css (css's enviroment variables setup) on this project (but I'm not :'). I'm still learning Tailwind... but I'm getting better 🥂
+I should have use global variable for css (css's enviroment variables setup) on this project (but I'm not :'). Still learning Tailwind... but I'm getting better 🥂
 
 <!-- 
 # vue-project
